@@ -1,3 +1,29 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
 body {
-    background-color: red;
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Input area CSS */
+.input-area {
+    /* background-color: #F8F8F8; */
+}
+.bg-gray {
+    background-color: #DCDCDC;
+}
+#calculate {
+    background-color: #59A5FF;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    border: 0;
+    padding: 7px 30px;
+    margin: 15px;
+    border-radius: 5px;
 }
