@@ -5,8 +5,16 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 p{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
+}
+.teal{
+    color: #31A5AC;
+}
+
+/*Image Area*/
+.image-area {
+    margin-bottom: 20px;
 }
 
 /* Input area CSS */
