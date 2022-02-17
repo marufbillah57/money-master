@@ -14,7 +14,7 @@ function clickItem(itemId){
 	
 	
 	if(isNaN(itemAmount) || itemAmount < 0){
-		alert('Please')
+		alert('Please enter a valid number');
 	} else {
 		return itemAmount;
 	}
@@ -44,7 +44,7 @@ function balanceUpdate(){
 		document.getElementById('total-expense').innerText = totalExpenses;
 		document.getElementById('balance').innerText = incomeAmount - totalExpenses;
 	} else {
-		alert('Please enter');
+		alert('Please enter a valid number');
 	}
 
 }
@@ -53,7 +53,7 @@ function balanceUpdate(){
 // saveing amount get and show
 document.getElementById('save-button').addEventListener('click', function(){
     const saveAmountText = document.getElementById('saving-amount');
-    const remainAmountText = document.getElementById('remaining-balance').innerText;
+    const remainAmountText = document.getElementById('remaining-balance');
     const incomeAmount = clickItem('income-input');
     const saveAmount = (incomeAmount * 10) / 100;
     saveAmountText.innerText = saveAmount;
