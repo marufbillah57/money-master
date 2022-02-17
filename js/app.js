@@ -1,13 +1,17 @@
 function getProductId(idName){
     const product = document.getElementById(idName);
-    const productNumber = parseFloat(product.value); 
+    const productNumber = parseFloat(product.value);
+    // clear input field 
+    product.value = '';
     if(productNumber > 0){
         return productNumber;
+    } else {
+       
     }
-    product.value = '';
+   
 }
 
-document.getElementById('calculate').addEventListener('click', function(){
+document.getElementById('calculate-button').addEventListener('click', function(){
    const incomeAmount = getProductId('income-input');
    const foodAmount = getProductId('food-input');
    const rentAmount = getProductId('rent-input');
@@ -30,42 +34,11 @@ document.getElementById('calculate').addEventListener('click', function(){
     
 });
 
-
-
-// document.getElementById('calculate').addEventListener('click', function(){
-//     const incomeInput = document.getElementById('income-input');
-//     const incomeAmount = parseFloat(incomeInput.value);
-//     // expenses 
-//     const food = document.getElementById('food-input');
-//     const foodAmount = parseFloat(food.value);
-//     const rent = document.getElementById('rent-input');
-//     const rentAmount = parseFloat(rent.value);
-//     const clothes = document.getElementById('clothes-input');
-//     const clothesAmount = parseFloat(clothes.value);
-//     console.log(clothesAmount);
-//     costCalculate();
-//     balance();
+document.getElementById('save-button').addEventListener('click', function(){
+    const saveAmountText = document.getElementById('saving-amount').innerText;
+    const remainAmountText = document.getElementById('remaining-balance').innerText;
+    const incomeAmount = getProductId('income-input');
     
-// });
-
-/* 
-function costCalculate(){
-    const food = document.getElementById('food-input');
-    const foodAmount = parseFloat(food.value);
-    const rent = document.getElementById('rent-input');
-    const rentAmount = parseFloat(rent.value);
-    const clothes = document.getElementById('clothes-input');
-    const clothesAmount = parseFloat(clothes.value);
-    const totalCost = foodAmount + rentAmount + clothesAmount;
-   return document.getElementById('total-expense').innerText = totalCost;
-}
+});
 
 
-
-function balance(){
-    const incomeInput = document.getElementById('income-input');
-    const incomeAmount = parseFloat(incomeInput.value);
-    const totalCost = costCalculate();
-    document.getElementById('balance').innerText = incomeAmount - totalCost;
-
-} */

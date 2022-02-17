@@ -14,7 +14,7 @@ p{
     background-color: #E37777;
 }
 
-#calculate, .save-button {
+#calculate-button, .save-button {
     background-color: #59A5FF;
     color: white;
     text-align: center;
